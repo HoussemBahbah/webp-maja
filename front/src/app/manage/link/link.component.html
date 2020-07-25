@@ -1,0 +1,28 @@
+
+    <div class="panel-heading " style="margin-bottom:30px" >
+      <h1 class="text-center">Tutorial Topics</h1>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let link of links ">
+            <td>{{link.name}}</td>
+            <td>{{link.category}}</td>
+            <td>{{link.date}}</td>
+            <td><button (click)="deleteTutorial(link.id)">Delete</button> 
+                <button [routerLink]="['/link/show/', link.id]">Show</button>
+                <button [routerLink]="['/link/edit/', link.id]">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
