@@ -1,0 +1,48 @@
+
+<link rel="stylesheet" href="assets/css/Pretty-User-List.css">
+<link rel="stylesheet" href="assets/css/dh-row-titile-text-image-right-1.css">
+
+
+
+
+<h2 class="text-center text-info" style="color:#17a2b8;margin:20px;padding:20px;font-family:Montserrat, sans-serif;">Link Section</h2>
+<div class="container">
+  <div class="card">
+      <div class="card-header">
+          <h6 class="mb-0"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-heart fa-stack-1x fa-inverse"></i></span>Last Articles</h6>
+      </div>
+  </div>
+</div>
+<div class="team-boxed" style="background-color:#ffffff;"></div>
+<div class="article-list"></div>
+<div></div>
+<div id="empresa" style="padding:20px;margin:1px;">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 col-md-7 col-lg-7" *ngIf="link">
+              <h1>{{link.name}}</h1>
+              <p> {{link.link}} </p>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-5"><img src="assets/img/law-document.jpeg"></div>
+      </div>
+  </div>
+</div>
+
+  
+<div class="footer-basic">
+  <div class="container">
+      <div class="row user-list" style="width:967px;">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-3 user-item">
+              <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                  <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+              </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 user-item">
+              <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                  <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div></div>
+  </div>

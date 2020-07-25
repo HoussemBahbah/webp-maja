@@ -1,0 +1,7 @@
+com\webdev\app\controller\HomeController.class
+com\webdev\app\SQLiteDialect.class
+com\webdev\app\repository\UserRepository.class
+com\webdev\app\AppApplication.class
+com\webdev\app\controller\TestController.class
+com\webdev\app\service\UserService.class
+com\webdev\app\entity\User.class

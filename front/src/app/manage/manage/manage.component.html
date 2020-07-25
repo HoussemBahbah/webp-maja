@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="assets/css/Article-Cards.css">
+<link rel="stylesheet" href="assets/css/Article-List.css">
+
+
+<link rel="stylesheet" href="assets/css/Pretty-User-List.css">
+<link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+
+
+
+<h2 class="text-center text-info" style="color:#17a2b8;margin:20px;padding:20px;font-family:Montserrat, sans-serif;">Manage Content</h2>
+   
+   
+  
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:25px">
+                    <span class="fa-stack"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-heart fa-stack-1x fa-inverse"></i></span>
+                    <a class="navbar-brand" > Maja Sections</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" data-toggle="tab" routerLink="education">Education </a>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" routerLink="tutorial">Tutorial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" routerLink="link">Link</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" [routerLink]="['/',currentlink ,'add']" >Add {{currentlink}}</a>
+                            </li>
+                        
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+                
+                <div class="container">
+                    <h2></h2>
+                    <hr>
+                  
+
+                    
+               
+                       
+                   
+                      
+                      <div class="panel panel-default">
+                     <router-outlet> </router-outlet>
+                    </div>
+                
+                  </div>
+                  
+</div>
+        </div>
+    </div>
+    <div class="team-boxed" style="background-color:#ffffff;"></div>
+    <div class="article-list"></div>
+    <div></div>
+    <div class="footer-basic">
+        <div class="container">
+            <div class="row user-list" style="width:967px;">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-3 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,77 @@
+
+
+ <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
+ <link rel="stylesheet" href="assets/css/ebs-contact-form1.css">
+ 
+<link rel="stylesheet" href="assets/css/Pretty-User-List.css">
+<link rel="stylesheet" href="assets/css/dh-row-titile-text-image-right-1.css">
+
+
+
+    <div>
+        
+    <h2 class="text-center text-info" style="color:#17a2b8;margin:20px;padding:20px;font-family:Montserrat, sans-serif;">Tutorial Section</h2>
+    
+  
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="text-center mb-0" style="margin:3px;padding:1px;"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-check fa-stack-1x fa-inverse"></i></span>Add Article</h6>
+            </div>
+        </div>
+    </div>
+    <div class="team-boxed" style="background-color:#ffffff;"></div>
+    <div class="article-list"></div>
+    <div></div>
+    <div id="empresa" style="padding:20px;margin:1px;">
+        <div class="container">
+            <form class="bootstrap-form-with-validation">  
+                <div class="form-group">
+                        <h1>Contact Information</h1><label for="title-input">Title</label><input class="form-control" type="text" name="name" id="name" required [(ngModel)]="tutorial.name"></div>
+                        <div class="form-group"><label for="date-input">Date</label><input class="form-control" type="text" name="date-input" id="date-input" required [(ngModel)]="tutorial.date"></div>
+                        <div class="form-group"><label for="date-input">description</label><input class="form-control" type="text" name="description-input" id="description-input" required [(ngModel)]="tutorial.description"></div>
+                        <div class="form-group"><label for="textarea-input">Text </label><textarea class="form-control" name="textarea" id="textarea-input" required [(ngModel)]="tutorial.text"></textarea></div>
+                        <div class="form-group"><label for="search-input">Search Input Group</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"> <i class="fa fa-search"></i></span></div><input class="form-control" type="search" name="search" id="search-input"></div>
+                </div>
+                <div class="form-group"><label for="file-input">File Input</label><input type="file" name="file-input" id="file-input"></div>
+                <div class="form-group">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"></div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-6"></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-7"></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-8"></div>
+                </div>
+                <div class="form-group"><label>Static Control</label><input class="form-control-plaintext" type="text" value="This is an example template, showing the proper bootstrap components and classes needed for creating a validation form. Any actual input validation and the logic behind it is up to the developer.&nbsp;"
+                        readonly=""></div>
+                <div class="form-group"><button class="btn btn-primary" (click)="onSubmit()">Save</button></div>
+                
+                <div [hidden]="!submitted">
+                  <h4>You submitted successfully!</h4>
+              </div>
+              </form>
+
+            
+            
+            
+        </div>
+    </div>
+    <div class="footer-basic">
+        <div class="container">
+            <div class="row user-list" style="width:967px;">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-3 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     

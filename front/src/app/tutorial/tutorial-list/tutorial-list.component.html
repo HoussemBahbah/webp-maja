@@ -1,0 +1,80 @@
+
+
+
+<link rel="stylesheet" href="assets/css/Article-Cards.css">
+<link rel="stylesheet" href="assets/css/Article-List.css">
+
+
+<link rel="stylesheet" href="assets/css/Pretty-User-List.css">
+<link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+
+
+
+<h2 class="text-center text-info" style="color:#17a2b8;margin:20px;padding:20px;font-family:Montserrat, sans-serif;">Education Section</h2>
+   
+   
+  
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="mb-0"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x text-muted"></i><i class="fa fa-heart fa-stack-1x fa-inverse"></i></span>Last Articles</h6><figure class="snip1253">
+  <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52"/></div>
+  <figcaption>
+    <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+    <h3>The World Ended Yesterday</h3>
+    <p>
+      I don't need to compromise my principles, they don't have the slightest bearing on what happens to me anyway.
+    </p>
+  </figcaption>
+  
+</figure>
+<figure class="snip1253 hover" *ngFor="let tutorial of tutorials">
+  <div class="image" ><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample66.jpg" alt="sample66"/></div>
+  <figcaption>
+    <div class="date"><span class="day">17</span><span class="month">Nov</span></div>
+    <h3 >{{tutorial.name}}</h3>
+    <p>
+      Sometimes the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.
+    </p>
+  </figcaption>
+  <footer>
+    <div class="views"><i class="ion-eye"></i>1,870</div>
+    <div class="love"><i class="ion-heart"></i>973</div>
+    <div class="comments"><i class="ion-chatboxes"></i>85</div>
+  </footer><a [routerLink]="['show', tutorial.id]"></a>
+</figure>
+<figure class="snip1253">
+  <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample59.jpg" alt="sample59"/></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
+    <h3>Down with this sort of thing</h3>
+    <p>
+      I don't need to compromise my principles, they don't have the slightest bearing on what happens to me anyway.
+    </p>
+  </figcaption>
+  <footer>
+    <div class="views"><i class="ion-eye"></i>928</div>
+    <div class="love"><i class="ion-heart"></i>198</div>
+    <div class="comments"><i class="ion-chatboxes"></i>23</div>
+  </footer><a href="#"></a>
+</figure></div>
+        </div>
+    </div>
+    <div class="team-boxed" style="background-color:#ffffff;"></div>
+    <div class="article-list"></div>
+    <div></div>
+    <div class="footer-basic">
+        <div class="container">
+            <div class="row user-list" style="width:967px;">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-3 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>

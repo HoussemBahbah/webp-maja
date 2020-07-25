@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/login.css">
+    </head>
+    <body>
+    
+    
+    <div id="id02" class="modal">
+      
+      <form class="modal-content animate" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h1> Sign Up</h1>
+         
+         
+        </div>
+    
+        <div class="container">
+          <label for="uname" name="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" id="username" [(ngModel)]="user.username" required>
+    
+          <label for="psw" name="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" [(ngModel)]="user.password" required>
+          <label for="email"  name="labelmail"><b>Email</b></label>
+          <input type="text" placeholder="Email@Email.com" [(ngModel)]="user.email" name="email" id="email" required>
+            
+          <button type="button" name="register" (click)="createUser()">Register</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="javascript:void(0)">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+          
