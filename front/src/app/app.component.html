@@ -20,7 +20,11 @@
   </div>
   </nav>
   </div>
-  
+   
+  <div class="container" *ngIf = "currentlink != '/home' ">
+    <a (click)="forwardClicked()" *ngIf = "forward >0 " class="btn btn-light action-button pull-right" style="text-decoration: none;display: inline-block;padding: 8px 16px;background-color: rgb(86,198,198);color:#ffffff;border-radius: 50%; margin-right:20px">&#8250; </a>
+    <a (click)="backClicked()" class="btn btn-light action-button pull-left" style="text-decoration: none;display: inline-block;padding: 8px 16px;background-color: rgb(86,198,198);color:#ffffff;border-radius: 50%; margin-left:20px">&#8249; </a>
+</div>
 
 <router-outlet></router-outlet>  
 <app-login></app-login>

@@ -23,6 +23,7 @@ import { LinkDeleteComponent } from '../link/link-delete/link-delete.component';
 import { ManageComponent } from '../manage/manage/manage.component';
 import { EducationComponent } from '../manage/education/education.component';
 import { TutorialComponent } from '../manage/tutorial/tutorial.component';
+import { LinkComponent } from '../manage/link/link.component';
 
 const routes: Routes = [
   {
@@ -78,6 +79,10 @@ pathMatch: 'full'
     {
       path: 'tutorial',
       component: TutorialComponent,
+    },
+    {
+      path: 'link',
+      component: LinkComponent,
     }
   ]
  },
